@@ -1,0 +1,14 @@
+{
+  "name": "curriculum-vitae",
+  "version": "1.0.0",
+  "description": "Curriculum Vitae",
+  "main": "index.js",
+  "author": "tkzwhr",
+  "license": "MIT",
+  "scripts": {
+    "build": "cat README.md | md-to-pdf --config-file config.json > curriculum-vitae.pdf"
+  },
+  "dependencies": {
+    "md-to-pdf": "^5.2.4"
+  }
+}

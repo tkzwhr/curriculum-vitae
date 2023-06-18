@@ -6,9 +6,18 @@
   "author": "tkzwhr",
   "license": "MIT",
   "scripts": {
-    "build": "cat README.md | md-to-pdf --config-file config.json > curriculum-vitae.pdf"
+    "build": "cat curriculum-vitae.md | md-to-pdf --config-file config.json > curriculum-vitae.pdf",
+    "build:html": "md-to-pdf curriculum-vitae.md --config-file config.json --as-html",
+    "watch": "node watch.js"
   },
   "dependencies": {
     "md-to-pdf": "^5.2.4"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3"
+  },
+  "volta": {
+    "node": "18.16.0",
+    "yarn": "1.22.19"
   }
 }

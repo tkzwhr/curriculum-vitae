@@ -1,0 +1,25 @@
+em {
+    color: slategray;
+    font-style: normal;
+}
+
+#profile {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+#name-and-job > * {
+    margin: 0;
+    padding-right: 100px;
+}
+
+.company-info blockquote {
+    margin: 0;
+    font-style: normal;
+    font-size: 80%;
+}
+
+.company-info p {
+    margin: 0;
+}
